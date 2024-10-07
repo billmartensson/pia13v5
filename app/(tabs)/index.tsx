@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import StartScreen from '../StartScreen';
 import ReadmoreScreen from '../ReadmoreScreen';
+import CategoryScreen from '../CategoryScreen';
 
 export default function HomeScreen() {
 
@@ -17,6 +18,7 @@ export default function HomeScreen() {
     <Stack.Navigator>
       <Stack.Screen name="StartScreen" component={StartScreen} options={{ title: "Tjena" }} />
       <Stack.Screen name="ReadmoreScreen" component={ReadmoreScreen} />
+      <Stack.Screen name="CategoryScreen" component={CategoryScreen} />
     </Stack.Navigator>
   );
 }
